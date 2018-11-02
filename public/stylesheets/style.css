@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #000000;
+}
+
+a {
+  color: #00B7FF;
+}
+#button {
+    width: 50px;
+    border: 5px solid pink;
+    background: #ffe;
+    border-radius: 5px;
+    color: #6a5acd;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.welcome{
+	border: 2px solid purple;
+	padding: 5px;
+	font-size: 36px;
+	font-style: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #6a5acd;
+	
+}
+h1{
+	border:5px dotted purple;
+	color: #6a5acd;
+	width: 45%;
+}

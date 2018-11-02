@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>EDIT NOTE</title>
+<link rel='stylesheet' href='/stylesheets/edit.css' />
+<link rel='stylesheet' href="https://use.fontawesome.com/releases/v5.4.2/css/all.css?fbclid=IwAR0vNQcWlySu0fF0zy_S8ickdsaAWNojLIBpzIuj5PI4ndvqCd3SWhHuGHs">
+</head>
+<body>
+	
+	<div class="adddate"><button>add date</button></div>
+	<h1>view notes</h1>
+	<% notes.forEach(function(note,i) { %>
+	<div class="note">
+	<i class="far fa-edit"></i></a>
+	<button type="submit"><a href='/deletenote/<%= note._id%>'><i class="fas fa-trash-alt"></i></button>
+	<p><strong><%= note.title %></strong><br><%= note.text %></p>
+	</div>
+	<% }) %>
+	
+	
+	
+	</body>
+</html> 

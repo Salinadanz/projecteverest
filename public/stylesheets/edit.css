@@ -1,0 +1,38 @@
+body{
+    background-color: #000000;
+}
+
+p{
+    color: #6a5acd;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+#button {
+    width: 50px;
+    border: 5px solid pink;
+    background: #ffe;
+    border-radius: 5px;
+    color: #6a5acd;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .adddate{
+        border-spacing: 5px;
+        border: 2px solid #6a5acd;
+        float: right;
+   
+    }
+
+input [type=text]{
+    height: 60px;
+    width: 70%;
+    background-color: #ffffff;
+    color: #6a5acd;
+    border-style: dotted;
+    border-color: blue
+}
+
+h1{
+    color:#6a5acd;
+}
