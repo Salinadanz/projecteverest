@@ -8,15 +8,13 @@
 	
 	<div class="adddate"><button>add date</button></div>
 	<h1>view notes</h1>
-	<% notes.forEach(function(note,i) { %>
+	<% notes.forEach(function(note, i) { %>
 	<div class="note">
-	<i class="far fa-edit"></i></a>
-	<button type="submit"><a href='/deletenote/<%= note._id%>'><i class="fas fa-trash-alt"></i></button>
 	<p><strong><%= note.title %></strong><br><%= note.text %></p>
+	<i class="far fa-edit"></i></a>
+	<button type="submit"><a href="/deletenote/<%= note._id%>"><i class="fas fa-trash-alt"></i></a></button>
+	
 	</div>
 	<% }) %>
-	
-	
-	
-	</body>
+</body>
 </html> 

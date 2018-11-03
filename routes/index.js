@@ -25,7 +25,7 @@ router.post('/addNote',function(req,res){
         promise.then((note) => {
             Notes.find().exec(function(err, notes)
                 {
-                console.log('user has taken notes',note);
+                //console.log('user has taken notes',note);
 
                 res.render('editNote', {notes})
                 });
@@ -33,14 +33,18 @@ router.post('/addNote',function(req,res){
 
 });
 
-router.delete('/deletenote/:id', function(req,res){
-                Notes.find({id: req.params.id}).remove();
-                console.log('user deleted');
+router.get('/deletenote/:id', function(req,res){
+                Notes.findOneAndRemove({_id: req.params.id},function(err,note){
+                console.log('user deleted',note);
+                res.redirect('/editNote')
+            });
 
              })
 
 router.get('/editNote', function(req, res, next) {
-  res.render('editNote');
+    Notes.find().exec(function(err, notes) {
+        res.render('editNote', {notes});
+    })
 });
 
 
@@ -76,11 +80,11 @@ router.post('/signup',function(req,res)
 	password:req.body.password
     });
 
-var promise=user.save()
-promise.then((user) => {
-	                   console.log('user signed up with values',user);
-                        });
-})
+        var promise=user.save()
+        promise.then((user) => {
+        	                   console.log('user signed up with values',user);
+                                });
+        })
 
 
 
