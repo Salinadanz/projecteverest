@@ -1,5 +1,7 @@
 
 
+
+
 <html>
   <head>
   <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no" />
@@ -126,8 +128,9 @@
     
     .tripbody{
       font-size: 24px;
-      padding-left:700px; 
+      padding-left:900px;
     }
+
     a:visited {
      color: black; 
     text-decoration: none;
@@ -139,11 +142,10 @@
     <div class="title"><strong>GHUMFIR<br>
     <div class="welcome">Click Your Trip</div></strong></div>
     
-    
    </div>
    <div class="menu">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="/">GHUMFIR</a>
+          <a class="navbar-brand" href="/homePg">GHUMFIR</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -151,9 +153,24 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/homePg">Home <span class="sr-only">(current)</span></a>
               </li>
-              
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Create
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href=/addNote>Add Event</a>
+                    <a class="dropdown-item" href=/homeStay>Add Homestay</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  What's New?
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href=/tripList>Nearby Trips</a>
+                  <a class="dropdown-item" href=/viewHome>Available Homestays</a>
+              </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -162,16 +179,18 @@
           </div>
         </nav>
       </div><br>
+      
+  
 <div class="tripbody">
-		<form method="post" action="/signup">
-			<p>Username</p>
-			<input type="text" name="username" id="nameid" ><br>
-			<p>Password</p>
-			<input type="password" name="password" id="passwordid"><br>
-			<p>Re-Password</p>
-			<input type="password" name="Repassword" id="Repasswordid"><br>
-			<button type="submit">Signup</button>
-			</form>
+		<h1>View Available Homestays</h1>
+	<% homestays.forEach(function(homeStay, i) { %>
+	<div class="note">
+  <% if (homeStay.place && homeStay.place !== ''){ %>
+    <p><strong><%= homeStay.place %></strong><br><%= homeStay.rates %></p>
+  <% } %>
+	
+	</div>
+	<% }) %>
 </div>
 </div>
   </body>

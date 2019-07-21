@@ -1,12 +1,104 @@
-<!DOCTYPE html>
-<html>
+
+
+    <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title>GHUMFIR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
+  <style>
+  body{
+    background-color: #8080ff;  
+  }
+    .wrapper {
+      width: 100%;
+      height:100%;
+      background-image: url(images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    position: relative;
+   
+  }
+
+    .title {
+      color:black;
+      text-align: center;
+      font-family: 'Arial';
+      font-size: 150px;
+      height: 50%; 
+      width: 100%;
+      
+      
+        }
+
+ 
+
+    .welcome{
+      font-size: 75px;
+      color: white;
+    }
+
+ 
+    .trip{
+      border-style: dotted;
+      border-color: white ;
+     
+      margin-top: 30px;
+      width: 100%;
+      text-align:left;
+      font-family: 'Arial';
+      -left: 600px; 
+      font-size: 100px;
+      /* background-color: #8080ff; */
+      align-items: right; 
+      
+
+    }
+
+    form{
+      padding-left: 900px;
+      font-size: 75px;
+      color:bisque;
+      position: relative;
+
+    }
+
+   
+
+    .sign{
+      border-radius: 25px;
+      background-color:white;
+      padding:15px 32px;
+    }
+
+    .items{
+      align-items: center;
+    }
+  </style>
   <body>
-    <h1><%= title %></h1>
-    <div class="welcome"><p>Welcome to <%= title %></p></div>
-   <div id="button" ><a href=/addNote><button>Go To your notes</button></a></div>
+  <div class="wrapper">
+    <div class="title"><strong>GHUMFIR<br>
+    <div class="welcome">Click Your Trip</div></strong></div>
+    
+
+     <form>
+       <div class="items">
+          <button class="sign"><a href=/signup>Signup</a></button>
+          <br><br>
+          <button type="button" class="sign"><a href=/login>Login</a></button><br>
+       </div>
+        
+     </form>
+
+  
+   </div>
   </body>
 </html>
+
+
+ 

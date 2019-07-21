@@ -1,9 +1,10 @@
 body{
-    background-color: #000000;
+    background-color:  #5cdb95;
+    background-image: url(images/cover.jpg)
 }
 
 p{
-    color: #6a5acd;
+    columns: rgb(5, 58, 112);
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: bold;

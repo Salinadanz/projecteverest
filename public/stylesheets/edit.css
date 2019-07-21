@@ -1,9 +1,9 @@
 body{
-    background-color: #000000;
+    background-color: #8080ff;
 }
 
 p{
-    color: #6a5acd;
+    color: #D83F87;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: bold;
@@ -13,13 +13,13 @@ p{
     border: 5px solid pink;
     background: #ffe;
     border-radius: 5px;
-    color: #6a5acd;
+    color: #D83F87;
     font-family: Arial, Helvetica, sans-serif;
     }
 
     .adddate{
         border-spacing: 5px;
-        border: 2px solid #6a5acd;
+        border: 2px solid #D83F87;
         float: right;
    
     }
@@ -28,11 +28,11 @@ input [type=text]{
     height: 60px;
     width: 70%;
     background-color: #ffffff;
-    color: #6a5acd;
+    color: #D83F87;
     border-style: dotted;
     border-color: blue
 }
 
 h1{
-    color:#6a5acd;
+    color:#D83F87;
 }
